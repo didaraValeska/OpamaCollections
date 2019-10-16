@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECC7C1"
+    android:paddingBottom="@dimen/activity_horizontal_margin"
+    android:paddingLeft="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_horizontal_margin"
+    tools:context="com.opama.ditha.opamacollection.MickeyActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/input_nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="@string/hint"
+            android:inputType="textPersonName"
+            android:textAllCaps="true"/>
+
+        <EditText
+            android:id="@+id/input_alamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="@string/hint1"
+            android:inputType="textLongMessage"
+            android:textAllCaps="true"/>
+
+        <EditText
+            android:id="@+id/input_hp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="@string/hint2"
+            android:inputType="textPhonetic"
+            android:textAllCaps="true"/>
+
+        <TextView
+            android:id="@+id/txt_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/pilihan"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:textAllCaps="true"
+            android:textSize="18sp"
+            android:layout_marginBottom="16dp"/>
+
+        <CheckBox
+            android:id="@+id/check_wisuda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="40dp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/wisuda"
+            android:textSize="16sp"
+            android:layout_gravity="center_horizontal"/>
+
+        <CheckBox
+            android:id="@+id/check_kado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="40dp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/kado"
+            android:textSize="16sp"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/jumlah"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:textAllCaps="true"
+            android:textSize="18sp"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_dec"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginRight="8dp"
+                android:background="@color/purple"
+                android:onClick="decrement"
+                android:text="@string/dec"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/quantity_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="@string/jum_value"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btn_inc"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="8dp"
+                android:background="@color/purple"
+                android:onClick="increment"
+                android:text="@string/inc"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/button_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@color/purple"
+            android:onClick="submitOrder"
+            android:text="@string/order"
+            android:textColor="@android:color/white"
+            android:textColorLink="#C06C84"
+            android:gravity="center"/>
+    </LinearLayout>
+
+</ScrollView>
